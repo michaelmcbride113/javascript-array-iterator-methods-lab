@@ -130,7 +130,7 @@ Hint: Return a new object literal from the callback that looks like:
 */
 
 let inventorNames = [inventors.map((inventor) => {
-    return `first: '${inventor.first}', last: '${inventor.last}'`
+    return { first: inventor.first, last: inventor.last};
 })];
 
 // Complete the exercise in the space below:
